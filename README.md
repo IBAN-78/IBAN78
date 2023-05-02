@@ -1,65 +1,64 @@
-# ChatGPT API Integration (in HTML/CSS with JS/PHP)
-###### Updated: 25.04.2023 (Working well) Please note that this code example is for a basic web application. 
-##### Read before: [ChatGPT Security Best Practices!](https://github.com/VolkanSah/ChatGPT-Security-Best-Practices)
+# Intégration de l'API ChatGPT (en HTML/CSS avec JS/PHP)
+###### Mise à jour : 02.05.2023 (Fonctionne bien) Veuillez noter que cet exemple de code concerne une application Web de base.
+##### À lire avant : [Meilleures pratiques de sécurité pour ChatGPT !](https://github.com/VolkanSah/ChatGPT-Security-Best-Practices)
 
-![Screenshot](chatgpt.png)
+![Capture d'écran](chatgpt.png)
 
-#### Example of GPT-3, 3.5, and 4 integration for your websites using HTML, CSS, JS, and PHP.
+#### Exemple d'intégration GPT-3, 3.5 et 4 pour vos sites Web utilisant HTML, CSS, JS et PHP.
 
-- [free 'ChatGPT Comment reply' Plugin for WordPress](https://github.com/VolkanSah/ChatGPT-Comments-Reply-WordPress-Plugin)
-###### ChatGPT is interesting, let's use it to create a better world.
+- [Plug-in gratuit "Réponse aux commentaires ChatGPT" pour WordPress](https://github.com/VolkanSah/ChatGPT-Comments-Reply-WordPress-Plugin)
+###### ChatGPT est intéressant, utilisons-le pour créer un monde meilleur.
 
-This README.md file will guide you through the process of integrating the ChatGPT API into your PHP-based website, enabling chat functionality using OpenAI's API.
+Ce fichier README.md vous guidera tout au long du processus d'intégration de l'API ChatGPT dans votre site Web basé sur PHP, activant la fonctionnalité de chat à l'aide de l'API d'OpenAI.
 
 
-## Prerequisites
--  PHP 7.4 or higher installed on your web server
--  A web server with support for PHP (e.g., Apache or Nginx)
--  Knowledge of HTML, CSS, and JavaScript (for designing the chat interface)
--  An API key for the ChatGPT API from Openai.com
+## Conditions préalables
+- PHP 7.4 ou supérieur installé sur votre serveur Web
+- Un serveur Web prenant en charge PHP (par exemple, Apache ou Nginx)
+- Connaissance de HTML, CSS et JavaScript (pour la conception de l'interface de chat)
+- Une clé API pour l'API ChatGPT d'Openai.com
 
-## API Key
-- Register for an account or log in to the OpenAi platform.
-- Navigate to the API Keys section and generate a new API key.
-- Store the API key safely, as you will need it in the next step.
+## Clé API
+- Créez un compte ou connectez-vous à la plateforme OpenAi.
+- Accédez à la section Clés API et générez une nouvelle clé API.
+- Stockez la clé API en toute sécurité, car vous en aurez besoin à l'étape suivante.
 
-## Setting Up
-- Clone or download this repository.
-- Replace YOUR_API_KEY and MODEL in config.php.
-- Replace the API_ENDPOINT URL in gptchat.php according to your needs (see list below).
-- Upload index.html, style.css, script.js, and gptchat.php files to your web server.
-- Access index.html in your browser (e.g., https://yourdomain.com/index.html).
-- Type a message in the chat input field and press Enter or click the Send button to send the message.
-- The OpenAI API should respond with a message from the language model.
-- Be cautious and set limits on your OpenAI Dashboard.
-## OpenAi-API Endpoints
-**please change gptchat.php & config.php to your needs**
+## Configuration
+- Cloner ou télécharger ce référentiel.
+- Remplacez YOUR_API_KEY et MODEL dans config.php.
+- Remplacez l'URL API_ENDPOINT dans gptchat.php selon vos besoins (voir liste ci-dessous).
+- Téléchargez les fichiers index.html, style.css, script.js et gptchat.php sur votre serveur Web.
+- Accédez à index.html dans votre navigateur (par exemple, https://votredomaine.com/index.html).
+- Tapez un message dans le champ de saisie du chat et appuyez sur Entrée ou cliquez sur le bouton Envoyer pour envoyer le message.
+- L'API OpenAI doit répondre par un message du modèle de langage.
+- Soyez prudent et fixez des limites sur votre tableau de bord OpenAI.
+## Points de terminaison OpenAi-API
+**veuillez modifier gptchat.php & config.php selon vos besoins**
 
-ENDPOINT | MODEL NAME
+ENDPOINT | NOM DU MODÈLE
 -- | --
-/v1/chat/completions | gpt-4, gpt-4-0314, gpt-4-32k, gpt-4-32k-0314, gpt-3.5-turbo, gpt-3.5-turbo-0301
-/v1/completions | text-davinci-003, text-davinci-002, text-curie-001, text-babbage-001, text-ada-001
-/v1/edits | text-davinci-edit-001, code-davinci-edit-001
-/v1/audio/transcriptions | whisper-1
-/v1/audio/translations | whisper-1
+/v1/chat/complétions | gpt-4, gpt-4-0314, gpt-4-32k, gpt-4-32k-0314, gpt-3.5-turbo, gpt-3.5-turbo-0301
+/v1/complétions | text-davinci-003, text-davinci-002, text-curie-001, text-babbage-001, text-ada-001
+/v1/edit | texte-davinci-edit-001, code-davinci-edit-001
+/v1/audio/transcriptions | murmure-1
+/v1/audio/traductions | murmure-1
 /v1/fine-tunes | davinci, curie, babbage, ada
-/v1/embeddings | text-embedding-ada-002, text-search-ada-doc-001
-/v1/moderations | text-moderation-stable, text-moderation-latest
+/v1/intégrations | text-embedding-ada-002, text-search-ada-doc-001
+/v1/modérations | texte-modération-stable, texte-modération-dernier
 
-You've successfully integrated the ChatGPT API into your PHP website! Now, you can customize the chat interface and enhance the user experience as needed.
-## Screenshot
+Vous avez intégré avec succès l'API ChatGPT dans votre site Web PHP ! Désormais, vous pouvez personnaliser l'interface de chat et améliorer l'expérience utilisateur selon vos besoins.
+## Capture d'écran
 <img src="screenshot.png">
 
-**Please note that this code example is for a basic web application, and you should consider additional security measures please read [ChatGPT Security Best Practices](https://github.com/VolkanSah/ChatGPT-Security-Best-Practices)!**
+**Veuillez noter que cet exemple de code concerne une application Web de base et que vous devez envisager des mesures de sécurité supplémentaires. Veuillez lire [Meilleures pratiques de sécurité ChatGPT](https://github.com/VolkanSah/ChatGPT-Security-Best-Practices) ! **
 
 
 
-## Thanks
-**"Thank you! Your support is appreciated, and I would be grateful if you could share this project with others, give it a "star" on GitHub, or become a sponsor. Don't forget to follow me for more free ideas and updates!"**
+## Merci
+**"Merci ! Votre soutien est apprécié, et je vous serais reconnaissant si vous pouviez partager ce projet avec d'autres, lui attribuer une "étoile" sur GitHub ou devenir un sponsor. N'oubliez pas de me suivre pour plus d'idées gratuites et mises à jour !"**
 
-## License
-This project is copyright © [VolkanSah](https://github.com/volkansah) and is licensed under the MIT License. You are free to use, modify, and distribute the code and assets, as long as the copyright notice and permission notice are preserved in all copies or substantial portions of the software."
+## Licence
+Ce projet est protégé par copyright © [IBAN-78](https://github.com/IBAN-78) et est sous licence MIT. Vous êtes libre d'utiliser, de modifier et de distribuer le code et les actifs, tant que l'avis de droit d'auteur et l'avis d'autorisation sont conservés dans toutes les copies ou parties substantielles du logiciel."
 
-## Credits
-Copyright: [S. Volkan Sah Kücükbudak](https://github.com/volkansah)
-
+## Crédits
+Droits d'auteur : IBAN-78
